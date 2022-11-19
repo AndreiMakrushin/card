@@ -1,6 +1,7 @@
+const img = document.querySelector('.img')
+const message = document.querySelector('.messages');
 
 document.addEventListener('mouseover', (e)=>{
-    const img = document.querySelector('.img')
     if (e.target.closest('.card')) {
         img.classList.add('active')
     }else{
@@ -20,4 +21,12 @@ document.addEventListener('click', (e)=>{
         }
  
     } 
+    if (e.target.closest('.Message')) {
+        message.classList.add('open')
+    }
+    if (e.target.closest('.message-button')) {
+        const clearMessage = document.querySelector('.message')
+        clearMessage.value = ''
+        message.classList.remove('open')
+    }
 })

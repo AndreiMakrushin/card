@@ -112,7 +112,46 @@ body{
     cursor: pointer;
 }
 .card .content .details .battons button:nth-child(2){
-    border: 1px solid #999;
+    border: 1px solid #999; 
     color: #999;
     background: white;
+}
+
+.messages{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: -50%;
+    opacity: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #C6FFDD, #FBD786, #f7797d);
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: .9s;
+}
+.message {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-size: 20px;
+    color: #555;
+}
+.message-button{
+    max-width: 250px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: #555;
+    cursor: pointer;
+}
+.open{
+    top: 50%;
+    opacity: 1;
 }
