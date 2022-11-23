@@ -159,10 +159,6 @@ body{
     top: 50%;
     opacity: 1;
 }
-input{
-
-}
-
 div[contenteditable] {
     border: 1px solid white;
     width: 400px;
