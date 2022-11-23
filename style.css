@@ -24,6 +24,7 @@ body{
     height: 410px;
     transition: .5s;
 }
+
 .img{
    position: absolute;
    left: 50%;
@@ -141,17 +142,28 @@ body{
     color: #555;
 }
 .message-button{
+    position: relative;
     max-width: 250px;
     font-size: 20px;
-    margin-right: 10px;
+    margin: 10px;
     border-radius: 20px;
     outline: none;
     border: none;
     padding: 5px;
     color: #555;
     cursor: pointer;
+    left: 100%;
+    transform: translateX(-130%);
 }
 .open{
     top: 50%;
     opacity: 1;
 }
+input{
+
+}
+
+div[contenteditable] {
+    border: 1px solid white;
+    width: 400px;
+  }
