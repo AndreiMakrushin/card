@@ -26,7 +26,7 @@ document.addEventListener('click', (e)=>{
     }
     if (e.target.closest('.message-button')) {
         const clearMessage = document.querySelector('.message')
-        clearMessage.value = ''
+        clearMessage.textContent = ''
         message.classList.remove('open')
     }
 })
