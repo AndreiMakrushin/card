@@ -19,6 +19,7 @@ body{
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
     transition: .5s;
 }
+
 .card:hover{
     width: 350px;
     height: 410px;
